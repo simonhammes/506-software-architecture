@@ -60,6 +60,53 @@ capture Mr. X.
 
 == Quality Attributes
 
+// TODO
+
+#table(
+  columns: 5, //(auto, auto, 1fr),
+  inset: 5pt,
+  align: horizon,
+  table.header([*ID*],
+    [*Quality\ Attribute*],
+    [*Scenario*],
+    [*Associated\ Driver*], [*Priority*],
+  ),
+  [QA1-1],
+  [Security],
+  [All user data must be encrypted during communication and storage, especially since the system handles sensitive data
+  (e.g. location data or chat messages).],
+  [],
+  [],
+  [QA2-1],
+  [Modifiability],
+  [New countries should be able to be added quickly.],
+  [],
+  [],
+  [QA3-1],
+  [Availability],
+  // TODO: Environment/"normal mode"?
+  [The backend should be able to handle 10000 requests per second with a rate of successful responses of 99.9%.],
+  [],
+  [],
+  [QA3-2],
+  [Availability],
+  [The mobile app should crash during less than 0.1% of games.],
+  [],
+  [],
+  [QA3-3],
+  [Availability],
+  // TODO
+  [The mobile app should handle network errors gracefully (especially relevant while underground).],
+  [],
+  [],
+  [QA4-1],
+  [Performance],
+  [The latency between Mr. X sending a location update or chat message and other
+  players receiving this message in normal mode (excluding limited connectivity underground) should be less than 2 seconds.],
+  [],
+  [],
+)
+
 == Primary Functionality
 
 == Architectural Concerns

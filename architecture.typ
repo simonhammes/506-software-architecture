@@ -33,6 +33,31 @@ capture Mr. X.
 
 == Design Purpose
 
+// TODO
+// Subscription model?
+// X users before the end of 2025?
+
+#table(
+  columns: (auto, auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+    [*ID*], [*Category*], [*Description*],
+  ),
+  [DP1],
+  [Purpose],
+  [Mobile game to be launched in Q3 2025],
+  [DP2],
+  [Goals],
+  [],
+  [DP3],
+  [Schedule],
+  [
+    Public Beta in Berlin in Q2 2025 \
+    Launch in Germany, Austria and Switzerland in Q3 2025
+  ],
+)
+
 == Quality Attributes
 
 == Primary Functionality

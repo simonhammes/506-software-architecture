@@ -66,6 +66,28 @@ capture Mr. X.
 
 == Constraints
 
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  table.header([*ID*], [*Description*]),
+  [CON1],
+  [Relevant data protection laws (GDPR for countries in the EU, nFADP for Switzerland)],
+  [CON2],
+  [Budget: 750,000€],
+  [CON3],
+  [Team of 5 including 3 developers],
+  [CON4],
+  [Deadlines: Public Beta in Q2 2025, Launch in Q3 2025],
+  [CON5],
+  [
+    Tech Stack \
+    - Mobile app using Flutter (cross-platform) \
+    - Backend written in Go \
+    - No on-premise infrastructure
+  ]
+)
+
 #pagebreak()
 
 = Attribute-Driven Design

@@ -29,6 +29,16 @@ his location periodically, adding suspense and challenge to the game. The game
 combines deduction, strategy, and teamwork as players race against time to
 capture Mr. X.
 
+= Stakeholders
+
+- Chief Executive Officer
+- Chief Financial Officer
+- Chief Marketing Officer
+- Creditors
+- Software Architect
+- Developers / DevOps
+- Customers
+
 = Architectural Significant Requirements / Drivers
 
 == Design Purpose

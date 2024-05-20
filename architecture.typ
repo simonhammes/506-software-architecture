@@ -56,10 +56,10 @@ capture Mr. X.
   ),
   [DP1],
   [Purpose],
-  [Mobile game to be launched in Q3 2025],
+  [Mobile application (iOS + Android) to be launched in Q3 2025 (greenfield project)],
   [DP2],
-  [Goals],
-  [],
+  [Goal],
+  [Publish app in the respective app stores in Germany, Austria and Switzerland],
   [DP3],
   [Schedule],
   [

@@ -117,37 +117,49 @@ capture Mr. X.
   [Security],
   [All user data must be encrypted during communication and storage, especially since the system handles sensitive data
   (e.g. location data or chat messages).],
-  [],
-  [],
+  [FR2, FR3,\ FR4],
+  [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA2-1],
   [Modifiability],
   [New countries should be able to be added quickly.],
   [],
-  [],
+  [#highlight(fill: rgb("#EF9A9A"))[(H, H)]],
   [QA3-1],
   [Availability],
   // TODO: Environment/"normal mode"?
   [The backend should be able to handle 10000 requests per second with a rate of successful responses of 99.9%.],
   [],
-  [],
+  [(H, L)],
   [QA3-2],
   [Availability],
   [The mobile app should crash during less than 0.1% of games.],
   [],
-  [],
+  [(M, L)],
   [QA3-3],
   [Availability],
   // TODO
   // TODO: Response measure?
   [The mobile app should handle network errors gracefully (especially relevant while underground).],
-  [],
-  [],
+  [FR3],
+  [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA4-1],
   [Performance],
   [The latency between Mr. X sending a location update or chat message and other
   players receiving this message in normal mode (excluding limited connectivity underground) should be less than 2 seconds.],
+  [FR3],
+  [#highlight(fill: rgb("#EF9A9A"))[(H, M)]],
+  [QA5-1],
+  [Usability],
+  // TODO: Check QAS wording
+  [The app should automatically send location updates in the chosen time interval without user involvement.],
+  [FR3],
+  [(H, L)],
+  [QA5-2],
+  [Usability],
+  // TODO: Check QAS wording
+  [Users should be able to send text messages using no more than than 2 clicks from the app's home screen (excluding the actual message).],
   [],
-  [],
+  [(H, L)],
 )
 
 == Constraints

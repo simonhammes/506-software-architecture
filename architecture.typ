@@ -68,6 +68,39 @@ capture Mr. X.
   ],
 )
 
+== Primary Functionality
+
+#table(
+  columns: (auto, auto, 1fr, auto),
+  inset: 5pt,
+  align: horizon,
+  table.header([*ID*], [*Category*], [*Description*], [*Priority [1-10]*]),
+  [FR1],
+  [Matchmaking],
+  [Players can create game sessions and invite other players or join existing sessions],
+  [TBD],
+  [FR2],
+  [Matchmaking],
+  [The system is able to bring players together based on their geographical location, even if the players haven't known each other before],
+  // TODO: medium priority
+  [TBD],
+  [FR3],
+  [Gameplay],
+  [Players can exchange location updates and chat messages in real-time],
+  [TBD],
+  [FR4],
+  [TBD],
+  // TODO
+  [Players can access their own and their teammates' location history after a game is over],
+  // TODO: Rather low, not too important
+  [TDB],
+  [FR5],
+  [Marketing/\ Analytics],
+  [The system provides detailed statistics and usage patterns],
+  // TODO: medium priority (for future feature development)
+  [TBD],
+)
+
 == Quality Attributes
 
 // TODO
@@ -118,41 +151,6 @@ capture Mr. X.
   [],
 )
 
-== Primary Functionality
-
-#table(
-  columns: (auto, auto, 1fr, auto),
-  inset: 5pt,
-  align: horizon,
-  table.header([*ID*], [*Category*], [*Description*], [*Priority [1-10]*]),
-  [FR1],
-  [Matchmaking],
-  [Players can create game sessions and invite other players or join existing sessions],
-  [TBD],
-  [FR2],
-  [Matchmaking],
-  [The system is able to bring players together based on their geographical location, even if the players haven't known each other before],
-  // TODO: medium priority
-  [TBD],
-  [FR3],
-  [Gameplay],
-  [Players can exchange location updates and chat messages in real-time],
-  [TBD],
-  [FR4],
-  [TBD],
-  // TODO
-  [Players can access their own and their teammates' location history after a game is over],
-  // TODO: Rather low, not too important
-  [TDB],
-  [FR5],
-  [Marketing/\ Analytics],
-  [The system provides detailed statistics and usage patterns],
-  // TODO: medium priority (for future feature development)
-  [TBD],
-)
-
-== Architectural Concerns
-
 == Constraints
 
 #table(
@@ -176,6 +174,8 @@ capture Mr. X.
     - No on-premise infrastructure
   ]
 )
+
+== Architectural Concerns
 
 #pagebreak()
 

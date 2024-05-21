@@ -106,6 +106,7 @@ capture Mr. X.
   [QA3-3],
   [Availability],
   // TODO
+  // TODO: Response measure?
   [The mobile app should handle network errors gracefully (especially relevant while underground).],
   [],
   [],

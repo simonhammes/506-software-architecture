@@ -53,9 +53,7 @@ capture Mr. X.
   columns: (auto, auto, 1fr),
   inset: 10pt,
   align: horizon,
-  table.header(
-    [*ID*], [*Category*], [*Description*],
-  ),
+  table.header([*ID*], [*Category*], [*Description*]),
   [DP1],
   [Purpose],
   [Mobile application (iOS + Android) to be launched in Q3 2025 (greenfield project)],
@@ -109,14 +107,10 @@ capture Mr. X.
 // Question: Should we remove QAs with low priorities from the documentation? Or not follow up on them anymore? Same with primary functionality.
 
 #table(
-  columns: 5, //(auto, auto, 1fr),
+  columns: 5,
   inset: 10pt,
   align: horizon,
-  table.header([*ID*],
-    [*Quality\ Attribute*],
-    [*Scenario*],
-    [*Associated\ Driver*], [*Priority*],
-  ),
+  table.header([*ID*], [*Quality\ Attribute*], [*Scenario*], [*Associated\ Driver*], [*Priority*]),
   [QA1-1],
   [Security],
   [All user data must be encrypted during communication and storage, especially since the system handles sensitive data

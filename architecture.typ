@@ -206,3 +206,42 @@ capture Mr. X.
 #pagebreak()
 
 = Attribute-Driven Design: Iterations
+
+== Iteration 1
+
+//=== Step 1: Review Inputs
+//- Primary Functionality and QAs are prioritized #sym.checkmark
+
+//=== Step 2: Establish Iteration Goal
+//- This is a greenfield project in a mature domain
+//  - The first iteration should result in an overall system structure, e.g. by using a reference architecture 
+//  - Client-Server or Event-Driven architecture?
+
+// === Architectural Decision Record
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  [*ID - Title*], [*DR1 - Service-Based Architecture*],
+  [*Status*], [Accepted],
+  [*Context*], [Main architectural pattern for proposed greenfield system],
+  [*Considered Drivers*], [TBD],
+  [*ADD Iteration*], [1],
+  [*Decision*], [Decision + Rationale],
+  [*Considered\ Alternatives*], [TBD],
+  [*Consequences*], [TBD],
+  [*Additional\ Documentation*], [TBD],
+)
+
+// TODO: Add sketch of client-server architecture in here?
+// Formal documentation is created after the iterations
+
+// TODO: Add User Interface layer
+#figure(
+  image("./images/iteration-1/service-based-architecture.excalidraw.png", width: 80%),
+  caption: [
+    // TODO
+    Caption
+  ],
+)

@@ -74,7 +74,7 @@ capture Mr. X.
 
 #table(
   columns: (auto, auto, 1fr, auto),
-  inset: 5pt,
+  inset: 10pt,
   align: horizon,
   table.header([*ID*], [*Category*], [*Description*], [*Priority [1-10]*]),
   [FR1],
@@ -106,7 +106,7 @@ capture Mr. X.
 
 #table(
   columns: 5, //(auto, auto, 1fr),
-  inset: 5pt,
+  inset: 10pt,
   align: horizon,
   table.header([*ID*],
     [*Quality\ Attribute*],

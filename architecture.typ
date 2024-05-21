@@ -106,6 +106,8 @@ capture Mr. X.
 
 // TODO
 
+// Question: Should we remove QAs with low priorities from the documentation? Or not follow up on them anymore? Same with primary functionality.
+
 #table(
   columns: 5, //(auto, auto, 1fr),
   inset: 10pt,

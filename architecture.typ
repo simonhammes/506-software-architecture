@@ -1,4 +1,9 @@
-#set heading(numbering: "1.1")
+#set heading(numbering: (..n) => {
+  // Disable numbering for h3+
+  if n.pos().len() < 3 {
+    numbering("1.1", ..n)
+  }
+})
 
 #page(margin: (left: 2in))[
   #line(start: (0%, 5%), end: (8.5in, 5%), stroke: (thickness: 2pt))
@@ -14,7 +19,7 @@
   ]
 ]
 
-#outline(indent: auto)
+#outline(depth: 2, indent: auto)
 
 #pagebreak()
 

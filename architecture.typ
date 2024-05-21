@@ -70,6 +70,8 @@ capture Mr. X.
 
 == Primary Functionality
 
+// TODO: Check priority values
+
 #table(
   columns: (auto, auto, 1fr, auto),
   inset: 5pt,
@@ -78,27 +80,24 @@ capture Mr. X.
   [FR1],
   [Matchmaking],
   [Players can create game sessions and invite other players or join existing sessions],
-  [TBD],
+  [10],
   [FR2],
   [Matchmaking],
   [The system is able to bring players together based on their geographical location, even if the players haven't known each other before],
-  // TODO: medium priority
-  [TBD],
+  [7],
   [FR3],
   [Gameplay],
   [Players can exchange location updates and chat messages in real-time],
-  [TBD],
+  [10],
   [FR4],
-  [TBD],
   // TODO
+  [TBD],
   [Players can access their own and their teammates' location history after a game is over],
-  // TODO: Rather low, not too important
-  [TDB],
+  [3],
   [FR5],
   [Marketing/\ Analytics],
   [The system provides detailed statistics and usage patterns],
-  // TODO: medium priority (for future feature development)
-  [TBD],
+  [6],
 )
 
 == Quality Attributes

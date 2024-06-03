@@ -102,9 +102,7 @@ capture Mr. X.
 
 == Quality Attributes
 
-// TODO
-
-// Question: Should we remove QAs with low priorities from the documentation? Or not follow up on them anymore? Same with primary functionality.
+// TODO: Check QAS wording
 
 #table(
   columns: 5,
@@ -113,19 +111,18 @@ capture Mr. X.
   table.header([*ID*], [*Quality\ Attribute*], [*Scenario*], [*Associated\ Driver*], [*Priority*]),
   [QA1-1],
   [Security],
-  [All user data must be encrypted during communication and storage, especially since the system handles sensitive data
+  [All user data is encrypted during communication and storage, especially since the system handles sensitive data
   (e.g. location data or chat messages).],
   [FR2, FR3,\ FR4],
   [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA2-1],
   [Modifiability],
-  [New countries should be able to be added quickly.],
+  [A developer can add a new country in less than three working days.],
   [],
   [#highlight(fill: rgb("#EF9A9A"))[(H, H)]],
   [QA3-1],
   [Availability],
-  // TODO: Environment/"normal mode"?
-  [The backend should be able to handle 10000 requests per second with a rate of successful responses of 99.9%.],
+  [The backend should be able to handle 10000 requests per second in normal operation mode with a rate of successful responses of 99.9%.],
   [],
   [(H, L)],
   [QA3-2],
@@ -142,20 +139,17 @@ capture Mr. X.
   [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA4-1],
   [Performance],
-  [The latency between Mr. X sending a location update or chat message and other
-  players receiving this message in normal mode (excluding limited connectivity underground) should be less than 2 seconds.],
+  [The latency between players sending and receiving location updates or chat messages in normal mode (excluding limited connectivity underground) is less than 2 seconds.],
   [FR3],
   [#highlight(fill: rgb("#EF9A9A"))[(H, M)]],
   [QA5-1],
   [Usability],
-  // TODO: Check QAS wording
-  [The app should automatically send location updates in the chosen time interval without user involvement.],
+  [The mobile app automatically sends location updates in the configured time interval without user involvement.],
   [FR3],
   [(H, L)],
   [QA5-2],
   [Usability],
-  // TODO: Check QAS wording
-  [Users should be able to send text messages using no more than than 2 clicks from the app's home screen (excluding the actual message).],
+  [Users are able to send text messages using no more than 2 clicks from the app's home screen (excluding typing the actual message).],
   [],
   [(H, L)],
 )

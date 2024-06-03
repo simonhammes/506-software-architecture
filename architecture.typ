@@ -98,6 +98,8 @@ capture Mr. X.
   [#highlight(fill: yellow)[6]],
 )
 
+#pagebreak()
+
 == Quality Attributes
 
 // TODO
@@ -157,6 +159,8 @@ capture Mr. X.
   [],
   [(H, L)],
 )
+
+#pagebreak()
 
 == Constraints
 

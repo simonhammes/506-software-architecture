@@ -245,3 +245,44 @@ capture Mr. X.
     Caption
   ],
 )
+
+#pagebreak()
+
+== Iteration 2
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  [*ID - Title*], [*DR2 - Client-Server Pattern*],
+  [*Status*], [Accepted],
+  [*Context*], [
+    // TODO
+  ],
+  [*Considered Drivers*], [DP1, QA2-1],
+  [*ADD Iteration*], [2],
+  [*Decision*],
+  [
+    // TODO
+    The Client-Server pattern is employed in order to enhance the modifiability of the system.
+
+    *Rationale:*
+    - Mobile app and backend services can evolve independently
+      - New locations can be added without modifying existing client apps (-> QA2-1)
+    - Clients do not need to keep track of other clients
+  ],
+  [*Considered\ Alternatives*],
+  [
+    - Peer-to-Peer architecture: ruled out due to secure communication being much harder to achieve
+    - Microservice architecture: // TODO
+    - Event-Driven architecture: // TODO
+  ],
+  [*Consequences*],
+  [
+    - Communication over the network is neither secure nor reliable
+      - Both of these shortcomings will need to be addressed in further iterations
+  ],
+  [*Additional\ Documentation*], [TBD],
+)
+
+// TODO: Diagram

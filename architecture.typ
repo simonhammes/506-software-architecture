@@ -71,8 +71,6 @@ capture Mr. X.
 
 == Primary Functionality
 
-// TODO: Check priority values
-
 #table(
   columns: (auto, auto, 1fr, auto),
   inset: 10pt,
@@ -91,9 +89,8 @@ capture Mr. X.
   [Players can exchange location updates and chat messages in real-time],
   [#highlight(fill: rgb("#EF9A9A"))[10]],
   [FR4],
-  // TODO
-  [TBD],
-  [Players can access their own and their teammates' location history after a game is over],
+  [Gameplay],
+  [Players can access their own and their teammates' location history for a post-game analysis],
   [#highlight(fill: rgb("#61d800"))[3]],
   [FR5],
   [Marketing/\ Analytics],

@@ -18,6 +18,9 @@
 
 #pagebreak()
 
+#set page(numbering: "1")
+#counter(page).update(1)
+
 = Introduction
 This document contains the software architecture for a real-life software
 inspired by Scotland Yard, which is a board game where players work together as

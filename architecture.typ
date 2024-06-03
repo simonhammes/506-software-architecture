@@ -193,8 +193,8 @@ capture Mr. X.
 
 #pagebreak()
 
-= Attribute-Driven Design
+= Architectural Documentation: Views
 
 #pagebreak()
 
-= Architectural Documentation
+= Attribute-Driven Design: Iterations

@@ -286,3 +286,54 @@ capture Mr. X.
 )
 
 // TODO: Diagram
+
+#pagebreak()
+
+== Iteration 3
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  // TODO: Title
+  [*ID - Title*], [*DR3 - IPS (?)*],
+  [*Status*], [Accepted],
+  [*Context*], [
+    // TODO
+  ],
+  // TODO
+  [*Considered Drivers*], [],
+  [*ADD Iteration*], [3],
+  [*Decision*],
+  [
+    // TODO
+    Since the encryption of all user data is critical,
+    a number of patterns and tactics are applied to achieve
+    this quality attribute (or increase the ...?).
+    These include:
+    - Verifying message integrity
+    - Identifying and authenticating actors
+    - Restricting access to components/systems (e.g. database) which do not need to be publicly accessible
+    - Encrypting data during communication and storage
+
+    // TODO: Only "Encrypt Data" since it is the only tactic driven by the QA(S)? Maybe in combination with "Separate Entities"? Separate database to store location data and chat messages in a separate database without personal user data (names, addresses, ...)?
+
+    // Additional tactic: Delete location data/chat messages after 30 days to limit potential data breaches?
+
+    *Rationale:*
+    // TODO
+  ],
+  [*Considered\ Alternatives*],
+  [
+    // TODO
+  ],
+  [*Consequences*],
+  [
+    - Performance is negatively affected by introducing these security measures.
+    - Certificates must be kept secret
+    // TODO
+  ],
+  [*Additional\ Documentation*], [TBD],
+)
+
+// TODO: Diagram: Information flow (HTTPS/WSS)

@@ -31,13 +31,14 @@ capture Mr. X.
 
 = Stakeholders
 
-- Chief Executive Officer
-- Chief Financial Officer
-- Chief Marketing Officer
-- Creditors
-- Software Architect
-- Developers / DevOps
-- Customers
+// Based on 4+1 architectural view model
+
+- Analysts
+- Developers
+- DevOps Engineers
+- End Users
+
+// TODO: Add concerns/rationale?
 
 #pagebreak()
 

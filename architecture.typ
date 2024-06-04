@@ -238,13 +238,15 @@ capture Mr. X.
 // Formal documentation is created after the iterations
 
 // TODO: Add User Interface layer
-#figure(
-  image("./images/iteration-1/service-based-architecture.excalidraw.png", width: 80%),
-  caption: [
-    // TODO
-    Caption
-  ],
-)
+#align(center + horizon)[
+  #figure(
+    image("./images/iteration-1/service-based-architecture.excalidraw.png", width: 80%),
+    caption: [
+      // TODO
+      Caption
+    ],
+  )
+]
 
 #pagebreak()
 

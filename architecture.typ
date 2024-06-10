@@ -285,7 +285,12 @@ capture Mr. X.
   ],
 )
 
-// TODO: Diagram
+#align(center + horizon)[
+  #figure(
+    image("./images/iteration-2/client-server-pattern.excalidraw.png", height: 40%),
+    caption: [Client-Server Pattern],
+  )
+]
 
 #pagebreak()
 

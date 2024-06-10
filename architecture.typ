@@ -258,14 +258,15 @@ capture Mr. X.
   align: horizon,
   [*ID - Title*], [*DR2 - Client-Server Pattern*],
   [*Status*], [Accepted],
-  [*Context*], [
-    // TODO
+  [*Context*],
+  [
+    The system should be highly modifiable and allow the developers to quickly
+    add new countries and cities to the list of supported locations.
   ],
   [*Considered Drivers*], [DP1, QA2-1],
   [*ADD Iteration*], [2],
   [*Decision*],
   [
-    // TODO
     The Client-Server pattern is employed in order to enhance the modifiability of the system.
 
     *Rationale:*
@@ -276,15 +277,12 @@ capture Mr. X.
   [*Considered\ Alternatives*],
   [
     - Peer-to-Peer architecture: ruled out due to secure communication being much harder to achieve
-    - Microservice architecture: // TODO
-    - Event-Driven architecture: // TODO
   ],
   [*Consequences*],
   [
     - Communication over the network is neither secure nor reliable
       - Both of these shortcomings will need to be addressed in further iterations
   ],
-  [*Additional\ Documentation*], [TBD],
 )
 
 // TODO: Diagram

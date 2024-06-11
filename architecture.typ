@@ -389,3 +389,46 @@ There are no additional concerns.
     caption: [Internal Firewall + API Proxy as a single access point],
   )
 ]
+
+#pagebreak()
+
+== Iteration 5
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  [*ID - Title*], [*DR5 - Retry Tactic*],
+  [*Status*], [Accepted],
+  [*Context*],
+  [
+    Network errors are a concern since the likelihood of reduced connectivity (e.g. underground) is high.
+    The mobile app should handle these in a graceful manner, ensuring no crashes and adequate latency.
+  ],
+  [*Considered Drivers*], [QA3-3],
+  [*ADD Iteration*], [5],
+  [*Decisions*],
+  [
+    1. A _retry tactic_ is used to automatically try to reconnect to the backend services handling long-running
+       connections (e.g. _RealTimeCommunicationService_) in case the connection is interrupted.
+    2. An exponential backoff strategy limits network load by using exponentially increasing waiting times between attempts.
+    3. Outgoing messages are buffered on the client and sent upon reconnection.
+    4. A maximum time limit (which can be configured when starting a match) acts as a _circuit breaker_,
+       causing a player to be removed from the match once the time without any connectivity reaches this time limit.
+
+    *Rationale:*
+    // TODO
+  ],
+  // TODO: Considered Alternatives?
+  [*Consequences*],
+  [
+    // TODO
+  ],
+)
+
+#align(center + horizon)[
+  #figure(
+    image("./images/iteration-5/retry.excalidraw.png", height: 35%),
+    caption: [Retry tactic with exponentially increasing waiting times],
+  )
+]

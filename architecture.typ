@@ -190,14 +190,7 @@ capture Mr. X.
 
 == Architectural Concerns
 
-// TODO
-
-#table(
-  columns: (auto, 1fr),
-  inset: 10pt,
-  align: horizon,
-  table.header([*ID*], [*Description*]),
-)
+There are no additional concerns.
 
 #pagebreak()
 

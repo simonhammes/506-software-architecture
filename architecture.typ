@@ -342,3 +342,51 @@ There are no additional concerns.
 )
 
 // TODO: Diagram: Information flow (HTTPS/WSS)
+
+#pagebreak()
+
+== Iteration 4
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  [*ID - Title*], [*DR4 - Limiting Access and Exposure*],
+  [*Status*], [Accepted],
+  [*Context*],
+  [
+    Since data _in use_ (i.e. in the database's RAM) is currently not
+    encrypted, preventing unauthorized access to the database server is
+    critical.
+  ],
+  [*Considered Drivers*], [QA1-1],
+  [*ADD Iteration*], [4],
+  [*Decisions*],
+  [
+    1. Access to the database server is limited by using an internal firewall.
+       Only explicitly granted backend services are allowed to access the
+       database.
+
+    2. Exposure to the backend services is limited by forcing all traffic
+       through the API proxy, which acts as a single access point. This
+       enables the implementation of centralized access control checks.
+
+    *Rationale:*
+
+    Both tactics reduce the attack surface. The API proxy is the only publicly
+    accessible component. All the other components do not need to be publicly
+    accessible.
+  ],
+  [*Consequences*],
+  [
+    - Firewall and private networks must be configured
+    - Maintenance/deployment access must still be guaranteed
+  ],
+)
+
+#align(center + horizon)[
+  #figure(
+    image("./images/iteration-4/limit-access.excalidraw.png"),
+    caption: [Internal Firewall + API Proxy as a single access point],
+  )
+]

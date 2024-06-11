@@ -432,3 +432,71 @@ There are no additional concerns.
     caption: [Retry tactic with exponentially increasing waiting times],
   )
 ]
+
+#pagebreak()
+
+== Iteration 6: Redundancy + Load Balancer
+
+#table(
+  columns: (auto, 1fr),
+  inset: 10pt,
+  align: horizon,
+  [*ID - Title*], [*DR6 - Redundancy + Load Balancer*],
+  [*Status*], [Accepted],
+  [*Context*],
+  [
+    Latency between players sending and receiving location updates or chat messages should be less than 2 seconds
+    (excluding network errors due to limited connectivity). The current architecture does not guarantee this if there
+    are many concurrent matches.
+  ],
+  [*Considered Drivers*], [QA3-1, QA4-1],
+  [*ADD Iteration*], [6],
+  [*Decisions*],
+  [
+    1. A second replica of the _RealTimeCommunicationService_ is deployed.
+    2. A load balancer is deployed to balance the load between both instances.
+
+    *Rationale:*
+    - Load balancer increases availability and reduces latency
+      - Is most probably not a bottleneck since a load balancer can typically handle tens of thousands of connections
+    - More replicas of the _RealTimeCommunicationService_ can be deployed if necessary
+  ],
+  [*Considered\ Alternatives*],
+  [
+    - Increasing the physical resources of the machine running _RealTimeCommunicationService_: reliance on vertical
+      scalability is undesirable (since it is inherently limited); would not increase availability
+    - Using an event bus to forward messages from one instance to the other instead of relying on dynamic routing
+      (see *Consequences* for more details)
+      - Ruled out due to adding lots of complexity and another single point of failure (the event bus itself)
+      - @iteration-6-event-bus shows a possible solution using this approach
+  ],
+  [*Consequences*],
+  [
+    The _MatchmakingService_ needs to route all players in a specific match to the same instance of the
+    _RealTimeCommunicationService_. It does this by providing the clients with a _routing key_, which they send along
+    when initiating the connection to the _RealTimeCommunicationService_. The load balancer uses this routing key to
+    route the connection to the _correct_ instance of the _RealTimeCommunicationService_.
+  ],
+)
+
+#pagebreak()
+
+=== Chosen Approach
+
+#align(center)[
+  #figure(
+    image("./images/iteration-6/load-balancer.excalidraw.png"),
+    caption: [A load balancer distributes traffic between the _RealTimeCommunicationService_ instances],
+  )
+]
+
+#linebreak()
+
+=== Alternative Approach (Discarded)
+
+#align(center)[
+  #figure(
+    image("./images/iteration-6/event-bus.excalidraw.png", height: 50%),
+    caption: [Using an event bus to forward messages between instances],
+  ) <iteration-6-event-bus>
+]

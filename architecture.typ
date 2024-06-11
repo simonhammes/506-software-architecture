@@ -308,8 +308,7 @@ There are no additional concerns.
     Since the system handles sensitive data (e.g. location data or chat messages), all user data must be encrypted
     during communication and storage.
   ],
-  // TODO
-  [*Considered Drivers*], [],
+  [*Considered Drivers*], [QA1-1],
   [*ADD Iteration*], [3],
   [*Decision*],
   [

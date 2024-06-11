@@ -301,28 +301,26 @@ There are no additional concerns.
   columns: (auto, 1fr),
   inset: 10pt,
   align: horizon,
-  // TODO: Title
-  [*ID - Title*], [*DR3 - IPS (?)*],
+  [*ID - Title*], [*DR3 - Encryption*],
   [*Status*], [Accepted],
-  [*Context*], [
-    // TODO
+  [*Context*],
+  [
+    Since the system handles sensitive data (e.g. location data or chat messages), all user data must be encrypted
+    during communication and storage.
   ],
   // TODO
   [*Considered Drivers*], [],
   [*ADD Iteration*], [3],
   [*Decision*],
   [
-    // TODO
-    Since the encryption of all user data is critical,
-    a number of patterns and tactics are applied to achieve
-    this quality attribute (or increase the ...?).
-    These include:
-    - Verifying message integrity
-    - Identifying and authenticating actors
-    - Restricting access to components/systems (e.g. database) which do not need to be publicly accessible
-    - Encrypting data during communication and storage
+    All user data is encrypted during communication and storage.
 
-    // TODO: Only "Encrypt Data" since it is the only tactic driven by the QA(S)? Maybe in combination with "Separate Entities"? Separate database to store location data and chat messages in a separate database without personal user data (names, addresses, ...)?
+    Data confidentiality _during communication_ is guaranteed by using secure protocols (HTTPS for short-running and WSS
+    for long-running/real-time operations). These protocols are widely used and include additional security measures
+    such as _message integrity verification_ using checksums to ensure data integrity.
+
+    Data _at rest_ in the shared database is encrypted at the storage layer, which makes encryption transparent to the
+    application (i.e. the database).
 
     // Additional tactic: Delete location data/chat messages after 30 days to limit potential data breaches?
 
@@ -331,15 +329,16 @@ There are no additional concerns.
   ],
   [*Considered\ Alternatives*],
   [
-    // TODO
+    - Encrypting the whole database would further improve security, but at the same time impose severe performance
+      degradation, rendering it infeasible
   ],
   [*Consequences*],
   [
     - Performance is negatively affected by introducing these security measures.
-    - Certificates must be kept secret
-    // TODO
+    - Certificates and private keys used for encryption must be kept secret
+    - Data _in use_ (i.e. in the database's RAM) is not encrypted
+      - This shortcoming will need to be addressed in further iterations
   ],
-  [*Additional\ Documentation*], [TBD],
 )
 
 // TODO: Diagram: Information flow (HTTPS/WSS)

@@ -216,20 +216,40 @@ capture Mr. X.
   [*ID - Title*], [*DR1 - Service-Based Architecture*],
   [*Status*], [Accepted],
   [*Context*], [Main architectural pattern for proposed greenfield system],
-  [*Considered Drivers*], [TBD],
+  [*Considered Drivers*], [FR1, FR3, FR5, QA2-1],
   [*ADD Iteration*], [1],
-  [*Decision*], [Decision + Rationale],
+  [*Decision*],
+  [
+    A service-based architecture is chosen as the main architectural pattern.
+
+    As a starting point, three services are instantiated:
+    - _MatchmakingService_: handles matchmaking process
+    - _RealTimeCommunicationService_: handles location updates and chat messages
+    - _AnalyticsService_: provides statistics and usage patterns for product development purposes
+
+    These services all access the same database. An API proxy is used to route
+    requests to the correct backend service. It also allows for handling common
+    tasks which would otherwise need to be implemented in every service (e.g.
+    authentication, rate limiting or caching).
+
+    *Rationale:*
+    - A service-based architecture provides great flexibility
+    - Services can be added or split up
+    - Good compromise between modularity and complexity
+  ],
   [*Considered\ Alternatives*],
   [
     - Layered architecture: ruled out due to lower initial modifiability and lower scalability
     - Microservice architecture: ruled out due to higher deployment and maintenance complexity
   ],
-  [*Consequences*], [TBD],
-  [*Additional\ Documentation*], [TBD],
+  [*Consequences*],
+  [
+    - Database transactions which cross service boundaries need to be coordinated, which adds complexity compared to a monolithic architecture
+  ],
 )
 
 // TODO: Add User Interface layer + clients?
-#align(center + horizon)[
+#align(center)[
   #figure(
     image("./images/iteration-1/service-based-architecture.excalidraw.png", width: 80%),
     caption: [Service-Based Architecture],

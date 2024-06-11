@@ -398,7 +398,7 @@ There are no additional concerns.
   columns: (auto, 1fr),
   inset: 10pt,
   align: horizon,
-  [*ID - Title*], [*DR5 - Retry Tactic*],
+  [*ID - Title*], [*DR5 - Retry + Circuit Breaker*],
   [*Status*], [Accepted],
   [*Context*],
   [

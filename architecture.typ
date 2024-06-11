@@ -200,7 +200,7 @@ There are no additional concerns.
 
 = Attribute-Driven Design: Iterations
 
-== Iteration 1
+== Iteration 1: Service-Based Architecture
 
 #table(
   columns: (auto, 1fr),
@@ -251,7 +251,7 @@ There are no additional concerns.
 
 #pagebreak()
 
-== Iteration 2
+== Iteration 2: Client-Server Pattern
 
 #table(
   columns: (auto, 1fr),
@@ -295,7 +295,7 @@ There are no additional concerns.
 
 #pagebreak()
 
-== Iteration 3
+== Iteration 3: Encryption
 
 #table(
   columns: (auto, 1fr),
@@ -344,7 +344,7 @@ There are no additional concerns.
 
 #pagebreak()
 
-== Iteration 4
+== Iteration 4: Limiting Access and Exposure
 
 #table(
   columns: (auto, 1fr),
@@ -392,7 +392,7 @@ There are no additional concerns.
 
 #pagebreak()
 
-== Iteration 5
+== Iteration 5: Retry + Circuit Breaker
 
 #table(
   columns: (auto, 1fr),

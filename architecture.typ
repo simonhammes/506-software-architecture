@@ -314,8 +314,9 @@ There are no additional concerns.
     All user data is encrypted during communication and storage.
 
     Data confidentiality _during communication_ is guaranteed by using secure protocols (HTTPS for short-running and WSS
-    for long-running/real-time operations). These protocols are widely used and include additional security measures
-    such as _message integrity verification_ using checksums to ensure data integrity.
+    #footnote[WebSocket Secure, i.e. WebSocket over TLS] for long-running/real-time operations). These protocols are
+    widely used and include additional security measures such as _message integrity verification_ using checksums to
+    ensure data integrity.
 
     Data _at rest_ in the shared database is encrypted at the storage layer, which makes encryption transparent to the
     application (i.e. the database).

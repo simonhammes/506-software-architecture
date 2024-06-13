@@ -241,7 +241,6 @@ There are no additional concerns.
   ],
 )
 
-// TODO: Add User Interface layer + clients?
 #align(center)[
   #figure(
     image("./images/iteration-1/service-based-architecture.excalidraw.png", width: 80%),

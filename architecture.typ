@@ -196,6 +196,19 @@ There are no additional concerns.
 
 = Architectural Documentation: Views
 
+== End Users
+// TODO: Use-case diagrams for perspective of players and marketing "department"
+
+== Analysts and Designers
+// TODO
+
+== DevOps Engineers
+// TODO: Deployment diagram (custom or UML)? VMs, Private networks/subnets, load balancer, firewall
+
+== Developers
+// TODO: Component/Package diagram?
+// Sequence/Activity diagram for matchmaking process?
+
 #pagebreak()
 
 = Attribute-Driven Design: Iterations

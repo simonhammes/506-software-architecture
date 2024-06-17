@@ -205,7 +205,16 @@ There are no additional concerns.
 = Architectural Documentation: Views
 
 == End Users
-// TODO: Use-case diagrams for perspective of players and marketing "department"
+
+#linebreak()
+
+#figure(
+  image("./images/views/use-cases.excalidraw.png", width: 80%),
+  // TODO: Caption
+  caption: [Use Case Diagram],
+)
+
+#pagebreak()
 
 == Analysts and Designers
 // TODO

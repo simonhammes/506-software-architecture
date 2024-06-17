@@ -47,12 +47,12 @@ capture Mr. X.
 
 = Stakeholders
 
-// Based on 4+1 architectural view model
-
-- Analysts
+- Product Developers
+  - Main responsibilities: product/feature development and expansion strategy
 - Developers
 - DevOps Engineers
-- End Users
+  - Main responsibilities: automation and deployment
+- End Users (Players)
 
 // TODO: Add concerns/rationale?
 

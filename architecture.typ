@@ -230,7 +230,18 @@ There are no additional concerns.
 #pagebreak()
 
 == DevOps Engineers
+
 // TODO: Deployment diagram (custom or UML)? VMs, Private networks/subnets, load balancer, firewall
+#linebreak()
+
+// TODO: Modify services, add load balancer, add key, add labels to edges/arrows, name services
+// TODO: Check slides re: custom diagrams
+
+#figure(
+  image("./images/views/deployment.excalidraw.png", width: 100%),
+  // TODO
+  caption: [Deployment/Physical View],
+)
 
 == Developers
 // TODO: Component/Package diagram?

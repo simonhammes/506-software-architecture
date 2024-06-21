@@ -217,7 +217,17 @@ There are no additional concerns.
 #pagebreak()
 
 == Analysts and Designers
-// TODO
+
+#linebreak()
+
+#figure(
+  image("./images/views/activity-diagram-matchmaking.excalidraw.png", width: 80%),
+  caption: [Activity Diagram Depicting the Matchmaking Process],
+)
+
+// TODO: Add another diagram re: gameplay/messages/timers/...
+
+#pagebreak()
 
 == DevOps Engineers
 // TODO: Deployment diagram (custom or UML)? VMs, Private networks/subnets, load balancer, firewall

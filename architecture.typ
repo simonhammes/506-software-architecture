@@ -217,8 +217,15 @@ There are no additional concerns.
 
 #linebreak()
 
+//#figure(
+//  image("./images/views/activity-diagram-matchmaking.excalidraw.png", width: 80%),
+//  caption: [Activity Diagram Depicting the Matchmaking Process],
+//)
+
+// TODO: Fix image
+
 #figure(
-  image("./images/views/activity-diagram-matchmaking.excalidraw.png", width: 80%),
+  image("./images/views/matchmaking.drawio.svg", width: 70%),
   caption: [Activity Diagram Depicting the Matchmaking Process],
 )
 

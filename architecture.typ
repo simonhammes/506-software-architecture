@@ -487,14 +487,6 @@ There are no additional concerns.
     3. Outgoing messages are buffered on the client and sent upon reconnection.
     4. A maximum time limit (which can be configured when starting a match) acts as a _circuit breaker_,
        causing a player to be removed from the match once the time without any connectivity reaches this time limit.
-
-    *Rationale:*
-    // TODO
-  ],
-  // TODO: Considered Alternatives?
-  [*Consequences*],
-  [
-    // TODO
   ],
 )
 

@@ -103,7 +103,7 @@ capture Mr. X.
   [#highlight(fill: rgb("#EF9A9A"))[10]],
   [FR2],
   [Matchmaking],
-  [The system is able to bring players together based on their geographical location, even if the players haven't known each other before],
+  [The system is able to connect players based on their geographical location, even if the players haven't known each other before],
   [#highlight(fill: yellow)[7]],
   [FR3],
   [Gameplay],

@@ -241,6 +241,7 @@ There are no additional concerns.
 )
 
 // TODO: Add another diagram re: gameplay/messages/timers/...
+// TODO: diagram showing information flows between different players
 
 #pagebreak()
 
@@ -263,8 +264,7 @@ There are no additional concerns.
 
 == Developers
 
-// TODO: Sequence (?) diagram for error handling/retry mechanism
-// TODO: diagram showing information flows between different players
+// TODO: Activity diagram for error handling/retry mechanism (includes loop, condition = circuit breaker time limit)
 
 === Matchmaking Process
 

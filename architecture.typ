@@ -248,16 +248,15 @@ There are no additional concerns.
 
 === Deployment View
 
-// TODO: Deployment diagram (custom or UML)? VMs, Private networks/subnets, load balancer, firewall
 #linebreak()
 
-// TODO: Modify services, add load balancer, add key, add labels to edges/arrows, name services
+// TODO: Add key
+// TODO: Add labels to edges/arrows
 // TODO: Check slides re: custom diagrams
 
 #figure(
-  image("./images/views/deployment.excalidraw.png", width: 100%),
-  // TODO
-  caption: [Deployment/Physical View],
+  image("./images/views/deployment.excalidraw.png"),
+  caption: [Deployment View],
 )
 
 #pagebreak()

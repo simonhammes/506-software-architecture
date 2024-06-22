@@ -52,10 +52,9 @@ capture Mr. X.
 - Developers
 - DevOps Engineers
   - Main responsibilities: automation and deployment
-// TODO: Add internal end users = product developers (access statistics)?
-- End Users (Players)
-
-// TODO: Add concerns/rationale?
+- End Users
+  - External: players
+  - Internal: product developers
 
 #pagebreak()
 

@@ -240,6 +240,8 @@ There are no additional concerns.
   caption: [Deployment/Physical View],
 )
 
+#pagebreak()
+
 == Developers
 // TODO: Component/Package diagram?
 // Sequence/Activity diagram for matchmaking process?
@@ -247,6 +249,13 @@ There are no additional concerns.
 // TODO: Sequence (?) diagram for error handling/retry mechanism
 // TODO: diagram showing information flows between different players
 // TODO: diagram showing routing key generation and usage
+
+#linebreak()
+
+#figure(
+  image("./images/views/matchmaking.png", width: 100%),
+  caption: [Matchmaking Process],
+)
 
 #pagebreak()
 

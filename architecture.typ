@@ -52,6 +52,7 @@ capture Mr. X.
 - Developers
 - DevOps Engineers
   - Main responsibilities: automation and deployment
+// TODO: Add internal end users = product developers (access statistics)?
 - End Users (Players)
 
 // TODO: Add concerns/rationale?
@@ -242,6 +243,10 @@ There are no additional concerns.
 == Developers
 // TODO: Component/Package diagram?
 // Sequence/Activity diagram for matchmaking process?
+
+// TODO: Sequence (?) diagram for error handling/retry mechanism
+// TODO: diagram showing information flows between different players
+// TODO: diagram showing routing key generation and usage
 
 #pagebreak()
 

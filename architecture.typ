@@ -380,22 +380,23 @@ There are no additional concerns.
   ],
   [*Considered Drivers*], [QA1-1],
   [*ADD Iteration*], [3],
-  [*Decision*],
+  [*Decisions*],
   [
     All user data is encrypted during communication and storage.
 
     Data confidentiality _during communication_ is guaranteed by using secure protocols (HTTPS for short-running and WSS
-    #footnote[WebSocket Secure, i.e. WebSocket over TLS] for long-running/real-time operations). These protocols are
-    widely used and include additional security measures such as _message integrity verification_ using checksums to
-    ensure data integrity.
+    #footnote[WebSocket Secure, i.e. WebSocket over TLS] for long-running/real-time operations).
 
     Data _at rest_ in the shared database is encrypted at the storage layer, which makes encryption transparent to the
     application (i.e. the database).
 
-    // Additional tactic: Delete location data/chat messages after 30 days to limit potential data breaches?
+    In addition, location data and chat messages are automatically deleted after 30 days.
 
     *Rationale:*
-    // TODO
+    - HTTPS and WSS are widely used and include additional security measures such as _message integrity verification_
+      using checksums to ensure data integrity
+    - Encryption at the storage layer makes it transparent to the application (i.e. the database)
+    - Deleting location data and chat messages after 30 days minimizes the impact of a potential data breach
   ],
   [*Considered\ Alternatives*],
   [

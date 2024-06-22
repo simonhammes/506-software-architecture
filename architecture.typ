@@ -180,7 +180,7 @@ capture Mr. X.
   [CON2],
   [Budget: 750,000€],
   [CON3],
-  [Team of 5 including 3 developers],
+  [Team of 5 including 3 developers/DevOps engineers],
   [CON4],
   [Deadlines: Public Beta in Q2 2025, Launch in Q3 2025],
   [CON5],

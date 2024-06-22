@@ -146,7 +146,7 @@ capture Mr. X.
   [Availability],
   // TODO
   // TODO: Response measure?
-  [The mobile app should handle network errors gracefully (especially relevant while underground).],
+  [The mobile app should handle network errors in _limited connectivity mode_ gracefully.],
   [FR3],
   [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA4-1],

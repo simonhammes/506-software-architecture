@@ -62,10 +62,6 @@ capture Mr. X.
 
 == Design Purpose
 
-// TODO
-// Subscription model?
-// X users before the end of 2025?
-
 #table(
   columns: (auto, auto, 1fr),
   inset: 10pt,
@@ -73,10 +69,10 @@ capture Mr. X.
   table.header([*ID*], [*Category*], [*Description*]),
   [DP1],
   [Purpose],
-  [Mobile application (iOS + Android) to be launched in Q3 2025 (greenfield project)],
+  [Mobile application (iOS + Android) to be launched in Q3 2025 including supporting backend services (greenfield project)],
   [DP2],
   [Goal],
-  [Publish app in the respective app stores in Germany, Austria and Switzerland],
+  [Publish the app in the respective app stores in Germany, Austria and Switzerland and monetize the app using a subscription business model],
   [DP3],
   [Schedule],
   [

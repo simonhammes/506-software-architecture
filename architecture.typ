@@ -5,23 +5,32 @@
   }
 })
 
-#block(inset: 1in)[
+#block(inset: (y: 1in, left: 1in))[
   #line(start: (0%, 5%), end: (8.5in, 5%), stroke: (thickness: 2pt))
 
   #align(horizon + left)[
     #text(size: 30pt, [Scotland Yard])
 
-    #text(size: 24pt, [506 Software Architecture])
+    #text(
+      size: 20pt,
+      [
+        Software Architecture Documentation
 
-    Summer Term 2024
-
-    Simon Hammes
-
-    simon.hammes\@hs-worms.de
+        Course: 506 Software Architecture
+      ]
+    )
   ]
 ]
 
 #align(bottom + center)[
+  Summer Term 2024
+
+  Simon Hammes
+
+  simon.hammes\@hs-worms.de
+
+  #v(1in)
+
   #image("./images/logo.svg", height: 15%)
 ]
 

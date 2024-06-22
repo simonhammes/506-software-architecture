@@ -107,7 +107,7 @@ capture Mr. X.
   [FR5],
   [Marketing/\ Analytics],
   [The system provides detailed statistics and usage patterns],
-  [#highlight(fill: yellow)[6]],
+  [#highlight(fill: yellow)[7]],
 )
 
 #pagebreak()

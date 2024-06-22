@@ -203,17 +203,20 @@ There are no additional concerns.
 
 == End Users
 
+=== Use Cases
+
 #linebreak()
 
 #figure(
-  image("./images/views/use-cases.excalidraw.png", width: 80%),
-  // TODO: Caption
-  caption: [Use Case Diagram],
+  image("./images/views/use-cases.excalidraw.png"),
+  caption: [Use Cases],
 )
 
 #pagebreak()
 
 == Analysts and Designers
+
+=== Matchmaking Process
 
 #linebreak()
 
@@ -226,7 +229,7 @@ There are no additional concerns.
 
 #figure(
   image("./images/views/matchmaking.drawio.svg", width: 70%),
-  caption: [Activity Diagram Depicting the Matchmaking Process],
+  caption: [Matchmaking Process (Activity Diagram)],
 )
 
 // TODO: Add another diagram re: gameplay/messages/timers/...
@@ -234,6 +237,8 @@ There are no additional concerns.
 #pagebreak()
 
 == DevOps Engineers
+
+=== Deployment View
 
 // TODO: Deployment diagram (custom or UML)? VMs, Private networks/subnets, load balancer, firewall
 #linebreak()
@@ -250,18 +255,17 @@ There are no additional concerns.
 #pagebreak()
 
 == Developers
-// TODO: Component/Package diagram?
-// Sequence/Activity diagram for matchmaking process?
 
 // TODO: Sequence (?) diagram for error handling/retry mechanism
 // TODO: diagram showing information flows between different players
-// TODO: diagram showing routing key generation and usage
+
+=== Matchmaking Process
 
 #linebreak()
 
 #figure(
   image("./images/views/matchmaking.png", width: 100%),
-  caption: [Matchmaking Process],
+  caption: [Matchmaking Process (Sequence Diagram)],
 )
 
 #pagebreak()

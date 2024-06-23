@@ -245,7 +245,7 @@ There are no additional concerns.
 // TODO: Fix image
 
 #figure(
-  image("./images/views/matchmaking-updated.drawio.svg", width: 70%),
+  image("./images/views/matchmaking.drawio.svg", width: 60%),
   caption: [Matchmaking Process (Activity Diagram)],
 )
 

@@ -280,7 +280,7 @@ There are no additional concerns.
 #linebreak()
 
 #figure(
-  image("./images/views/matchmaking.png", width: 100%),
+  image("./images/views/mermaid-diagram-2024-06-23-230934.png", width: 100%),
   caption: [Matchmaking Process (Sequence Diagram)],
 )
 

@@ -171,9 +171,18 @@ capture Mr. X.
   [QA5-2],
   [Usability],
   [Users are able to send text messages using no more than 2 clicks from the app's home screen (excluding typing the actual message).],
-  [],
+  [FR3],
   [(H, L)],
 )
+
+#linebreak()
+
+=== Selection of Quality Attribute Scenarios for ADD
+
+Because of their lower priority values in comparison to the other quality attribute scenarios, the drivers
+*QA3-1*, *QA3-2*, *QA5-1* and *QA5-2* will not be addressed during the ADD iterations. They can be addressed during the
+project's design phase instead. In addition, an external UI/UX expert will be consulted since the team does not feature
+a dedicated UI/UX expert.
 
 #pagebreak()
 

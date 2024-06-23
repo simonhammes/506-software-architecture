@@ -507,22 +507,11 @@ There are no additional concerns.
   ) <iteration-6-event-bus>
 ]
 
-= Architectural Documentation: Views
-
-== End Users
-
-=== Use Cases
-
-#linebreak()
-
-#figure(
-  image("./images/views/use-cases.excalidraw.png"),
-  caption: [Use Cases],
-)
-
 #pagebreak()
 
-== Analysts and Designers
+= Architectural Documentation: Views
+
+== Product Developers
 
 === Matchmaking Process (Activity Diagram)
 
@@ -531,6 +520,19 @@ There are no additional concerns.
 #figure(
   image("./images/views/matchmaking.drawio.svg", width: 60%),
   caption: [Matchmaking Process (Activity Diagram)],
+)
+
+#pagebreak()
+
+== Developers
+
+=== Matchmaking Process (Sequence Diagram)
+
+#linebreak()
+
+#figure(
+  image("./images/views/mermaid-diagram-2024-06-23-230934.png", width: 100%),
+  caption: [Matchmaking Process (Sequence Diagram)],
 )
 
 #pagebreak()
@@ -548,15 +550,13 @@ There are no additional concerns.
 
 #pagebreak()
 
-== Developers
+== End Users
 
-=== Matchmaking Process (Sequence Diagram)
+=== Use Cases
 
 #linebreak()
 
 #figure(
-  image("./images/views/mermaid-diagram-2024-06-23-230934.png", width: 100%),
-  caption: [Matchmaking Process (Sequence Diagram)],
+  image("./images/views/use-cases.excalidraw.png"),
+  caption: [Use Cases],
 )
-
-#pagebreak()

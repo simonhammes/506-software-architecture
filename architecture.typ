@@ -233,20 +233,10 @@ There are no additional concerns.
 
 #linebreak()
 
-//#figure(
-//  image("./images/views/activity-diagram-matchmaking.excalidraw.png", width: 80%),
-//  caption: [Activity Diagram Depicting the Matchmaking Process],
-//)
-
-// TODO: Fix image
-
 #figure(
   image("./images/views/matchmaking.drawio.svg", width: 60%),
   caption: [Matchmaking Process (Activity Diagram)],
 )
-
-// TODO: Add another diagram re: gameplay/messages/timers/...
-// TODO: diagram showing information flows between different players
 
 #pagebreak()
 
@@ -425,8 +415,6 @@ There are no additional concerns.
       - This shortcoming will need to be addressed in further iterations
   ],
 )
-
-// TODO: Diagram: Information flow (HTTPS/WSS)
 
 #pagebreak()
 

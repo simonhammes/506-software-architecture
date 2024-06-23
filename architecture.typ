@@ -123,8 +123,6 @@ capture Mr. X.
 
 == Quality Attributes
 
-// TODO: Check QAS wording
-
 #table(
   columns: 5,
   inset: 10pt,
@@ -153,9 +151,7 @@ capture Mr. X.
   [(M, L)],
   [QA3-3],
   [Availability],
-  // TODO
-  // TODO: Response measure?
-  [The mobile app should handle network errors in _limited connectivity mode_ gracefully.],
+  [The mobile app should handle network errors in _limited connectivity mode_ gracefully (i.e. not crash).],
   [FR3],
   [#highlight(fill: rgb("#EF9A9A"))[(M, H)]],
   [QA4-1],

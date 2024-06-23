@@ -303,9 +303,11 @@ There are no additional concerns.
   [
     A service-based architecture is chosen as the main architectural pattern.
 
-    As a starting point, three services are instantiated:
+    As a starting point, four services are instantiated:
     - _MatchmakingService_: handles matchmaking process
     - _RealTimeCommunicationService_: handles location updates and chat messages
+    - _ConnectionService_: integrates with APIs of external public transport operators and returns a list of possible
+      connections based on the user's current location
     - _AnalyticsService_: provides statistics and usage patterns for product development purposes
 
     These services all access the same database. An API proxy is used to route

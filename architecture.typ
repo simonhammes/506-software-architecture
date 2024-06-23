@@ -246,12 +246,8 @@ There are no additional concerns.
 
 #linebreak()
 
-// TODO: Add key
-// TODO: Add labels to edges/arrows
-// TODO: Check slides re: custom diagrams
-
 #figure(
-  image("./images/views/deployment.excalidraw.png"),
+  image("./images/views/deployment.excalidraw.png", height: 80%),
   caption: [Deployment View],
 )
 

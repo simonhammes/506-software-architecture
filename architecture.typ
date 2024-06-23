@@ -212,60 +212,6 @@ There are no additional concerns.
 
 #pagebreak()
 
-= Architectural Documentation: Views
-
-== End Users
-
-=== Use Cases
-
-#linebreak()
-
-#figure(
-  image("./images/views/use-cases.excalidraw.png"),
-  caption: [Use Cases],
-)
-
-#pagebreak()
-
-== Analysts and Designers
-
-=== Matchmaking Process (Activity Diagram)
-
-#linebreak()
-
-#figure(
-  image("./images/views/matchmaking.drawio.svg", width: 60%),
-  caption: [Matchmaking Process (Activity Diagram)],
-)
-
-#pagebreak()
-
-== DevOps Engineers
-
-=== Deployment View
-
-#linebreak()
-
-#figure(
-  image("./images/views/deployment.excalidraw.png", height: 80%),
-  caption: [Deployment View],
-)
-
-#pagebreak()
-
-== Developers
-
-=== Matchmaking Process (Sequence Diagram)
-
-#linebreak()
-
-#figure(
-  image("./images/views/mermaid-diagram-2024-06-23-230934.png", width: 100%),
-  caption: [Matchmaking Process (Sequence Diagram)],
-)
-
-#pagebreak()
-
 = Attribute-Driven Design: Iterations
 
 == Iteration 1: Service-Based Architecture
@@ -560,3 +506,57 @@ There are no additional concerns.
     caption: [Using an event bus to forward messages between instances],
   ) <iteration-6-event-bus>
 ]
+
+= Architectural Documentation: Views
+
+== End Users
+
+=== Use Cases
+
+#linebreak()
+
+#figure(
+  image("./images/views/use-cases.excalidraw.png"),
+  caption: [Use Cases],
+)
+
+#pagebreak()
+
+== Analysts and Designers
+
+=== Matchmaking Process (Activity Diagram)
+
+#linebreak()
+
+#figure(
+  image("./images/views/matchmaking.drawio.svg", width: 60%),
+  caption: [Matchmaking Process (Activity Diagram)],
+)
+
+#pagebreak()
+
+== DevOps Engineers
+
+=== Deployment View
+
+#linebreak()
+
+#figure(
+  image("./images/views/deployment.excalidraw.png", height: 80%),
+  caption: [Deployment View],
+)
+
+#pagebreak()
+
+== Developers
+
+=== Matchmaking Process (Sequence Diagram)
+
+#linebreak()
+
+#figure(
+  image("./images/views/mermaid-diagram-2024-06-23-230934.png", width: 100%),
+  caption: [Matchmaking Process (Sequence Diagram)],
+)
+
+#pagebreak()

@@ -85,7 +85,7 @@ capture Mr. X.
   [DP3],
   [Schedule],
   [
-    Public Beta in Berlin in Q2 2025 \
+    Public beta in Berlin in Q2 2025 (Berlin is the only available location) \
     Launch in Germany, Austria and Switzerland in Q3 2025
   ],
 )
@@ -99,7 +99,7 @@ capture Mr. X.
   table.header([*ID*], [*Category*], [*Description*], [*Priority [1-10]*]),
   [FR1],
   [Matchmaking],
-  [Players can create game sessions and invite other players or join existing sessions],
+  [Players can create game sessions and invite other players or join existing game lobbies],
   [#highlight(fill: rgb("#EF9A9A"))[10]],
   [FR2],
   [Matchmaking],
@@ -406,8 +406,7 @@ There are no additional concerns.
     Data confidentiality _during communication_ is guaranteed by using secure protocols (HTTPS for short-running and WSS
     #footnote[WebSocket Secure, i.e. WebSocket over TLS] for long-running/real-time operations).
 
-    Data _at rest_ in the shared database is encrypted at the storage layer, which makes encryption transparent to the
-    application (i.e. the database).
+    Data _at rest_ in the shared database is encrypted at the storage layer.
 
     In addition, location data and chat messages are automatically deleted after 30 days.
 
@@ -505,7 +504,7 @@ There are no additional concerns.
     2. An exponential backoff strategy limits network load by using exponentially increasing waiting times between attempts.
     3. Outgoing messages are buffered on the client and sent upon reconnection.
     4. A maximum time limit (which can be configured when starting a match) acts as a _circuit breaker_,
-       causing a player to be removed from the match once the time without any connectivity reaches this time limit.
+       causing a player to be removed from the match once the time without any connectivity reaches the limit.
   ],
 )
 

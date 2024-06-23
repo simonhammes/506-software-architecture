@@ -229,7 +229,7 @@ There are no additional concerns.
 
 == Analysts and Designers
 
-=== Matchmaking Process
+=== Matchmaking Process (Activity Diagram)
 
 #linebreak()
 
@@ -255,9 +255,7 @@ There are no additional concerns.
 
 == Developers
 
-// TODO: Activity diagram for error handling/retry mechanism (includes loop, condition = circuit breaker time limit)
-
-=== Matchmaking Process
+=== Matchmaking Process (Sequence Diagram)
 
 #linebreak()
 
